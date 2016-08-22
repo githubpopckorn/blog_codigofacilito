@@ -22,4 +22,9 @@ class ArticlesController < ApplicationController
 		@article.save
 		redirect_to @article
 	end
+
+	#PUT /articles/:
+	def update
+		
+	end
 end
