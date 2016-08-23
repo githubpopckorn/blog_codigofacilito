@@ -8,20 +8,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
- 	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container">
-			<%= link_to "Home", root_path, class: "navbar-brand"%>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="">Diseño</a></li>
-                <li><a href="">Programación</a></li>
-                <li><a href="">Tecnología</a></li>
-            </ul>
-		</div>
-	</nav>
+  <%= render "partials/navigation" %>
 
   <div class="container">
   	<body>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 	    <%= yield %>
-	</body>
+	  </body>
   </div>
 </html>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'articles#index'
+  devise_for :users
+  root 'welcome#index'
 
   resources :articles
   #resources :articles, except: [:delete]
